@@ -1,0 +1,129 @@
+/* I. Selectors */
+
+/* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+article {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.style-me1 {
+  color: red;
+}
+
+#style-me2 {
+  color: blue;
+}
+
+p.style-me1#style-me2 {
+  color: purple;
+}
+/* Put styles for questions 2.1 and 2.2 here */
+
+.my-descendants-are-styled p {
+  background-color: red;;
+} 
+
+.my-children-are-styled > p {
+  background-color: lightgreen;
+}
+
+
+/* II. Box model and common properties */
+/* Put styles for questions 1-8 here */
+
+.box {
+  background-color: orange;
+  margin: 10px 20px;
+  padding: 10px 100px;
+  width: 50vw;
+  height: 25vh !important;
+  border: 10px solid darkslategrey;
+  box-sizing: border-box;
+  overflow: hidden; 
+  outline: lightskyblue 10px solid;
+  border-radius: 50%;
+  background-image: url(./assets/images/img1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+/* III. Positioning */
+/* Put styles for questions 1-3 here */
+
+.position-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: yellow;
+}
+
+.position-relative {
+  position: relative;
+  background-color: aquamarine;
+}
+
+.position-sticky {
+  position: sticky;
+  top: 0;
+  background-color: greenyellow;
+}
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+
+.text-style {
+  color: red;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+
+a:link {
+  color: purple;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 2px 2px 5px rgb(51, 0, 51);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: green;
+  font-style: italic;
+
+}
+
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
+
+.calc-style {
+  width: calc(100vw - 100px);
+  background-color: pink;
+}
+
+.fixed-width-col {
+  width: 350px;
+  display: inline-block;
+}
+
+.fluid-col {
+  background-color: violet;
+  display: inline-block;
+  width: calc(100% - 356px);
+  
+}

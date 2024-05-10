@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML document</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="this is a sample website to practice HTML elememts.">
+  <meta name="keywords" content="HTML,element,semantic">
+  <meta name="auther" content="Saki Ajiro">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- works like <a href="/index.html">Home</a> -->
+      <a href="http://127.0.0.1:5500/lab-1-html/src/index.html">Home</a>
+      <a href="http://127.0.0.1:5500/lab-1-html/src/form.html">Form</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My HTML learning journey</h1>
+    <article>
+      <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+      <span>Block &amp; Inline</span><span>Style</span><span>Function</span>
+      <p>p represents paragraph without preserving spacing</p>
+      <pre>
+          Text in         a pre element
+          is displayed in a fixed-width
+          font, and it preserves
+          both      spaces and
+          line breaks
+        </pre>
+      <ul>
+        <li>Tui</li>
+        <li>Fantail</li>
+        <li>Kereru</li>
+        <li>Ruru</li>
+      </ul>
+      <ol>
+        <li>United States</li>
+        <li>China</li>
+        <li>Japan
+          <ol>
+            <li>Tokyo</li>
+            <li>Osaka</li>
+          </ol>
+        </li>
+      </ol>
+    </article>
+    <article>
+      <h2>Tables</h2>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">First Header</th>
+            <th>Second Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <article>
+      <h2>img, video, audio</h2>
+      <img src="https://picsum.photos/400/400" alt="image" width="300px" height="300px"/>
+      <img src="assets/html_lab_image.jpg" alt="sunrise from the top of a mountain" width="300px" height="300px">
+      <video controls width="250">
+        <source src="assets/flower.webm" type="video/webm">
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <figure>
+        <audio controls src="assets/t-rex-roar.mp3">
+          Your browser does not support the <code>audio</code> element.
+        </audio>  
+        <figcaption>t-rex roaring</figcaption>
+      </figure>
+    
+    </article>
+  </main>
+
+  <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>

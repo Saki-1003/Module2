@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- works like <a href="/index.html">Home</a> -->
+      <a href="http://127.0.0.1:5500/lab-1-html/src/index.html">Home</a>
+      <a href="http://127.0.0.1:5500/lab-1-html/src/form.html">Form</a>
+    </nav>
+  </header>
+
+  <main>
+    <form method="POST" action="http://localhost:3000/profile">
+      <div>
+        <label for="firstName">First Name: </label>
+        <input type="text" name="firstName" id="firstName">
+      </div>
+      <div>
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="lasttName" id="lastName">
+      </div>
+      <div>
+        <label for="JavaScript">JavaScript</label>
+        <input type="radio" name="coding language" id="JavaScript" value="JavaScript">
+        <label for="Python">Python</label>
+        <input type="radio" name="coding language" id="Python" value="Python">
+        <label for="C#">C#</label>
+        <input type="radio" name="coding language" id="C#" value="C#">
+      </div>
+      <div>
+        <label for="sedan">Sedan</label>
+        <input type="checkbox" name="vehicleType" id="sedan" value="Sedan">
+        <label for="SUV">SUV</label>
+        <input type="checkbox" name="vehicleType" id="SUV" value="SUV">
+        <label for="Ute">Ute</label>
+        <input type="checkbox" name="vehicleType" id="Ute" value="Ute">
+      </div>
+
+      <label for="brand">Brand of car:</label><br>
+      <select name="brand" id="brand">
+        <option value="">--Please choose the brand of your car--</option>
+        <option name="brand" value="Toyota">Toyota</option>
+        <option value="Honda">Honda</option>
+        <option value="Mazda">Mazda</option>
+        <option value="Mitsubishi">Mitsubishi</option>
+        <option value="Ford">Ford</option>
+        <option value="VW">VW</option>
+        <option value="BMW">BMW</option>
+        <option value="Hyundai">Hyundai</option>
+      </select><br>
+      <button type="submit">Submit form</button>
+    </form>
+  </main>
+
+  <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>
